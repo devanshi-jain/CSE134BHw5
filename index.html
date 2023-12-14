@@ -4,6 +4,20 @@
     <title>Devanshi's HW</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <script src="script.js"></script>
+    <script src="weather.js"></script>
+    <style>
+        body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        }
+        canvas {
+        width: 128px;
+        height: 128px;
+        }
+        .weather-info {
+        margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
     <!-- When JS is enabled or disabled-->
@@ -36,6 +50,15 @@
     </rating-widget>
 
     <p class="star-value" style="display: none;"></p>
+    <h1>Weather Forecast</h1>
 
+    <div class="weather-info">
+      <img id="weather-icon" alt="Weather Icon">
+      <div class="temperature">
+        <span class="temp-celsius">--°C</span>
+        <span class="temp-fahrenheit hidden">--°F</span>
+      </div>
+      <p class="weather-condition">---</p>
+    </div>
 </body>
 </html>
